@@ -1,0 +1,663 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f5f7fb;
+
+    color: #111827;
+}
+
+
+
+/* NAVBAR */
+
+nav {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: white;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+
+}
+
+
+.logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #111827;
+
+    font-weight: bold;
+
+}
+
+
+.nav-links a:hover {
+
+    color: #2563eb;
+
+}
+
+
+
+/* HOME */
+
+.home {
+
+    min-height: 90vh;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 70px 10%;
+
+}
+
+
+.home-content {
+
+    max-width: 600px;
+
+}
+
+
+.small-title {
+
+    color: #2563eb;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+}
+
+
+.home h1 {
+
+    font-size: 60px;
+
+    margin: 10px 0;
+
+}
+
+
+.home h2 {
+
+    color: #4b5563;
+
+    font-size: 28px;
+
+}
+
+
+.home-content > p {
+
+    margin-top: 20px;
+
+    line-height: 1.8;
+
+    color: #555;
+
+}
+
+
+
+/* PROFILE */
+
+.profile img {
+
+    width: 320px;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 8px solid white;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+
+}
+
+
+
+/* BUTTONS */
+
+.buttons {
+
+    margin-top: 30px;
+
+}
+
+
+.btn {
+
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    margin-right: 10px;
+
+}
+
+
+.btn.second {
+
+    background: white;
+
+    color: #2563eb;
+
+    border: 2px solid #2563eb;
+
+}
+
+
+
+/* SECTIONS */
+
+section {
+
+    padding: 90px 10%;
+
+}
+
+
+.title {
+
+    text-align: center;
+
+    font-size: 38px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.subtitle {
+
+    text-align: center;
+
+    margin-top: -25px;
+
+    margin-bottom: 40px;
+
+    color: #666;
+
+}
+
+
+
+/* ABOUT */
+
+.about {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+
+.about h3 {
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.about p {
+
+    line-height: 1.8;
+
+    color: #555;
+
+}
+
+
+.details p {
+
+    margin-bottom: 12px;
+
+}
+
+
+
+/* SKILLS */
+
+.skills {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+}
+
+
+.skill {
+
+    background: white;
+
+    padding: 18px 30px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+
+}
+
+
+.skill:hover {
+
+    transform: translateY(-5px);
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+
+
+/* PROJECTS */
+
+.projects {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+
+}
+
+
+.project-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+
+}
+
+
+.project-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+.project-number {
+
+    font-size: 40px;
+
+    font-weight: bold;
+
+    color: #dbeafe;
+
+    margin-bottom: 10px;
+
+}
+
+
+.project-card h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.project-card p {
+
+    color: #666;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+/* TAGS */
+
+.tags {
+
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 25px;
+
+}
+
+
+.tags span {
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+}
+
+
+
+/* PROJECT BUTTON */
+
+.project-btn {
+
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.project-btn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* RESUME */
+
+.resume-box {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+    line-height: 1.8;
+
+}
+
+
+.resume-box h2 {
+
+    color: #2563eb;
+
+}
+
+
+.resume-box h3 {
+
+    margin-top: 25px;
+
+    color: #2563eb;
+
+}
+
+
+.resume-box hr {
+
+    margin: 20px 0;
+
+}
+
+
+
+/* DOWNLOAD */
+
+.download-btn {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 14px 25px;
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+}
+
+
+.download-btn:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+
+/* CONTACT */
+
+.contact {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 25px;
+
+    text-align: center;
+
+}
+
+
+.contact div {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+}
+
+
+.contact h3 {
+
+    color: #2563eb;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* FOOTER */
+
+footer {
+
+    background: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .nav-links {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+
+    }
+
+
+    .home {
+
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        gap: 40px;
+
+    }
+
+
+    .home h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .profile img {
+
+        width: 240px;
+
+        height: 240px;
+
+    }
+
+
+    .about {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
